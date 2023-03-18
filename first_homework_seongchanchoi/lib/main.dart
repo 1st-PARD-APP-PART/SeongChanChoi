@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
+// VSCode나 Android Studio에서 Problems를 보시면 TODO가 있는 곳에 빨간 밑줄이 그어져 있습니다.
+// 할 일과 관련된 주석입니다.
+
 // TODO : 1. 각 위젯이 어떤 위젯인지 주석을 남긴다.
 // 그냥 남기면 된다.
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 // StatelessWidget
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,16 +19,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 // StatefulWidget
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key}) : super(key: key);
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyHomePageState createState() => _MyHomePageState();
 }
 
