@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 // TODO : 1. 각 위젯이 어떤 위젯인지 주석을 남긴다.
 // 그냥 남기면 된다.
 
-// TODO : 9. Gridview의 crossAxisCount와 generate를 수정하여 3열 3행으로 만들어준다.
-
 void main() => runApp(MyApp());
 
 // StatelessWidget
