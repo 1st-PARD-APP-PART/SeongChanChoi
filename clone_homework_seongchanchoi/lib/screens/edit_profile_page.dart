@@ -87,7 +87,8 @@ class EditProfilePage extends StatelessWidget {
                     ),
                     IconButton(
                       icon: Icon(Icons.arrow_forward_ios, size: 15),
-                      onPressed: () => Navigator.pushNamed(context, '/signUp'),
+                      onPressed: () =>
+                          Navigator.pushNamed(context, '/selectLocal'),
                     )
                   ],
                 ),

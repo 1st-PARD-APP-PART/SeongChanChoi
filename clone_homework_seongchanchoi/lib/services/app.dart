@@ -1,8 +1,10 @@
+import 'package:clone_homework_seongchanchoi/screens/chat_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/detail_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/edit_profile_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/home_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/profile_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/sign_in_page.dart';
+import 'package:clone_homework_seongchanchoi/screens/select_local_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/sign_up_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/upload_page.dart';
 import 'package:clone_homework_seongchanchoi/screens/welcome_page.dart';
@@ -22,6 +24,7 @@ class CloneDaangnApp extends StatelessWidget {
       initialRoute: '/welcome',
       routes: {
         '/welcome': (context) => WelcomePage(),
+        '/selectLocal': (context) => SelectLocalPage(),
         '/signUp': (context) => SignUpPage(),
         '/signIn': (context) => SignInPage(),
         '/home': (context) => HomePage(),
@@ -29,7 +32,7 @@ class CloneDaangnApp extends StatelessWidget {
         '/profile': (context) => ProfilePage(),
         '/editProfile': (context) => EditProfilePage(),
         '/detail': (context) => DetailPage(),
-        // '/chat': (context) => ChatPage(),
+        '/chat': (context) => ChatPage(),
         // '/myBuy':(context) => MyBuyPage(),
         // '/mySell':(context) => MySellPage(),
         // '/myFavorite':(context) => MyFavoritePage(),

@@ -70,7 +70,7 @@ class WelcomePage extends StatelessWidget {
     return Column(
       children: [
         ElevatedButton(
-          onPressed: () => Navigator.pushNamed(context, '/home'),
+          onPressed: () => Navigator.pushNamed(context, '/signUp'),
           style: ElevatedButton.styleFrom(
             backgroundColor: primaryColor,
             fixedSize: const Size(354, 56),

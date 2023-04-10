@@ -17,13 +17,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int bottomSelectedIndex = 0;
 
-  final List<Widget> _widgetOptions = <Widget>[
-    ItemPage(),
-    Container(
-      color: Colors.accents[3],
-    ),
-  ];
-
   @override
   void initState() {
     super.initState();

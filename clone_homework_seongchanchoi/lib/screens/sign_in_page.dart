@@ -103,8 +103,7 @@ class SignInPage extends StatelessWidget {
 
   Widget _buildButton(BuildContext context, Size size) {
     return ElevatedButton(
-      onPressed: () {},
-      // => Navigator.pushNamed(context, '/home'),
+      onPressed: () => Navigator.pushNamed(context, '/home'),
       style: ElevatedButton.styleFrom(
         backgroundColor: primaryColor,
         fixedSize: Size(size.width * 0.85, 91),
@@ -114,7 +113,11 @@ class SignInPage extends StatelessWidget {
       ),
       child: Text(
         '로그인',
-        style: Theme.of(context).textTheme.button,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }
