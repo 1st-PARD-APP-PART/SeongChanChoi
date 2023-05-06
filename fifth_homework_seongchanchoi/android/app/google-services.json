@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1094849858797",
+    "project_id": "pardfifth",
+    "storage_bucket": "pardfifth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094849858797:android:b68f12a7d409cd4ff050e4",
+        "android_client_info": {
+          "package_name": "com.example.gtk_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094849858797-f6pr9q5is4m2i41de7e46irhtsuiei1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACfCWk8-JJ6MukXN8a4BQJJULTptFxqxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094849858797-f6pr9q5is4m2i41de7e46irhtsuiei1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
