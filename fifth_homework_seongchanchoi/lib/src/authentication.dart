@@ -4,8 +4,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 import 'widgets.dart';
+import 'google_auth.dart';
 
 class AuthFunc extends StatelessWidget {
   const AuthFunc({
@@ -30,6 +32,18 @@ class AuthFunc extends StatelessWidget {
                 !loggedIn ? context.push('/sign-in') : signOut();
               },
               child: !loggedIn ? const Text('RSVP') : const Text('Logout')),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 24, bottom: 8),
+          child: StyledButton(
+              onPressed: () {
+                !loggedIn
+                    ? GoogleSignInProvider().googleLogin()
+                    : GoogleSignInProvider().googleLogout();
+              },
+              child: !loggedIn
+                  ? const Text('Google Login')
+                  : const Text('Logout')),
         ),
         Visibility(
           visible: loggedIn,
